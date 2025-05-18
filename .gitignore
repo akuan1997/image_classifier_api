@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+mytorch_env/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Temporary/Exam files (根據你的判斷)
+exam-20250503.zip
+# S_55525505.png # 如果這是個臨時檔案
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging (通常 CI/CD 流程會產生)
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints

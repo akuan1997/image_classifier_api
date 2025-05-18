@@ -134,7 +134,7 @@ API 啟動後，可以透過瀏覽器或任何 API 測試工具 (如 Postman, cU
     *   `file`: (必需) 圖片檔案 (例如 PNG, JPG)。
 *   **成功回應 (200 OK)**:
 
-![batch_predict](./images/batch_predict.png)
+![batch_predict](./images/single_predict.png)
       ```json
       {
         "filename": "test_image.png",

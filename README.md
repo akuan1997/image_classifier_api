@@ -1,3 +1,5 @@
+
+
 ## 🏛️ 架構選擇與考量
 
 本專案採用 FastAPI 搭配 Docker 的架構，主要基於以下考量：
@@ -131,12 +133,14 @@ API 啟動後，可以透過瀏覽器或任何 API 測試工具 (如 Postman, cU
 *   **Request Body**:
     *   `file`: (必需) 圖片檔案 (例如 PNG, JPG)。
 *   **成功回應 (200 OK)**:
-    ```json
-    {
-      "filename": "test_image.png",
-      "predicted_class": 7
-    }
-    ```
+
+![batch_predict](./images/batch_predict.png)
+      ```json
+      {
+        "filename": "test_image.png",
+        "predicted_class": 7
+      }
+      ```
 *   **cURL 範例**:
     ```bash
     curl -X POST -F "file=@/path/to/your/image.png" http://localhost:8000/predict
@@ -150,6 +154,8 @@ API 啟動後，可以透過瀏覽器或任何 API 測試工具 (如 Postman, cU
 *   **Request Body**:
     *   `files`: (必需) 一個或多個圖片檔案。在 Postman 或程式碼中，你需要多次指定 `files` 這個 key，並分別上傳不同的檔案。
 *   **成功回應 (200 OK)**:
+
+![batch_predict](./images/batch_predict.png)
     ```json
     {
       "predictions": [
